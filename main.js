@@ -31,12 +31,28 @@ function my_keydown(e)
 		{
 			aplhabetkey();
 			document.getElementById("d1").innerHTML="You pressed alphabet key";
-			console.log("alphabet key")
+			console.log("alphabet key");
+		if((keyPressed >=48 && keyPressed<=57))
+		{
+			numberkey();
+			document.getElementById("d1").innerHTML="You pressed number key";
+			console.log("number key");
+		if((keyPressed >=37 && keyPressed<=40))
+		{
+			arrowkey();
+			document.getElementById("d1").innerHTML="You pressed arrow key";
+			console.log("arrow key");
+		if((keyPressed >=17 && keyPressed<=27))
+		{
+			specialkey();
+			document.getElementById("d1").innerHTML="You pressed special key";
+			console.log("special key");
+		
 		}
 	else{
 		otherkey();
 		document.getElementById("d1").innerHTML="You pressed symbol or other key";
-	}
+	}}}}
 }
 
 function aplhabetkey()
